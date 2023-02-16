@@ -1,0 +1,43 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 4.4rem;
+  line-height: 1.6;
+}
+
+.quotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.quotes q {
+  font-size: 3rem;
+  line-height: 1.4;
+}
+
+.quotes p {
+  font-size: 2rem;
+}
+
+.controls {
+  display: flex;
+  gap: 2.2rem;
+  justify-content: center;
+}
+
+.controls button {
+  padding: 1rem 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom: .1rem solid #555;
+}
