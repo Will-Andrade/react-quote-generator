@@ -38,7 +38,7 @@ function App() {
   };
 
   const copyQuoteHandler = () => {
-    navigator.clipboard.writeText(quote!.text);
+    navigator.clipboard.writeText(`${quote?.text} \n- ${quote?.author}`);
   };
 
   return (<main className={classes.container} data-testid="app-component">
