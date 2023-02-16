@@ -1,9 +1,18 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App component', () => {
+  it('should render the App component', () => {
+    render(<App />);
+
+    const app = screen.getByTestId('app-component');
+    expect(app).toBeInTheDocument();
+  });
+
+  it('should render the quote generator', () => {
+    render(<App />);
+
+    const quoteGen = screen.getByTestId('quote-generator');
+    expect(quoteGen).toBeInTheDocument();
+  })
 });
